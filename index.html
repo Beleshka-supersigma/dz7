@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <!-- Левая часть -->
+          <div class="header__first">
+            <img src="icons/logo.png" alt="logo" class="logo" />
+            <input type="text" class="search" placeholder="Искать..." />
+          </div>
+
+          <!-- Центр: навигация -->
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li><a href="admin.html">Админ</a></li>
+              <li><a href="register.html">Зарегистрироваться</a></li>
+              <li><a href="login.html">Войти</a></li>
+              <li><a href="users.html"><img src="./icons/avatar.webp" alt="avatar" style="width: 40px; height: 40px;"></a></li>
+            </ul>
+          </nav>
+
+          <!-- Правая часть -->
+          <ul class="sort">
+            <li><button id="sort-newest">Новые</button></li>
+            <li><button id="sort-oldest">Старые</button></li>
+            <li><button id="sort-rating">По рейтингу</button></li>
+            <li><button id="sort-name">По алфавиту</button></li>
+          </ul>
+        </div>
+      </header>
+      <section class="banner">
+        <div class="banner__wrapper">
+          <div class="container">
+            <button class="arrow arrow-prev">
+              <img src="icons/arrow.png" alt="arrow" />
+            </button>
+            <button class="arrow arrow-next">
+              <img src="icons/arrow.png" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="movies container">
+        <div class="title">
+          <div class="title-line"></div>
+          <h2>Фильмы</h2>
+          <div class="title-line"></div>
+        </div>
+        <div class="movies__inner">
+          <!--  -->
+        </div>
+      </section>
+    </div>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="cross">&times;</button>
+        <h2>Хотите купить билет на новый фильм по скидке?</h2>
+        <img src="icons/reclam.png" alt="reclam" class="reclam" />
+        <div class="btns">
+          <button class="accept">Да, хочу</button>
+          <button class="cancel">Нет</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main/banner.js"></script>
+  <script src="js/main/movies.js"></script>
+  <script src="js/main/modal.js"></script>
+  <script src="js/main/main.js"></script>
+</html>

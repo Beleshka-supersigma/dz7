@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Апакай куйоо бала — Детали фильма</title>
+    <link rel="stylesheet" href="css/movie.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero" id="hero">
+        <div class="poster">
+          <img
+            id="cardImage"
+            alt="Постер фильма"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WPJiTxtg7GCfI5V3KvNE45HY-qDCnVM0BQ&s"
+          />
+        </div>
+
+        <div class="meta">
+          <h1 id="title">Апакай куйоо бала</h1>
+          <div class="sub">
+            Релиз: <span id="releaseDate">2024-10-03</span> •
+            <span id="genreList">Комедия</span>
+          </div>
+          <div class="badges">
+            <div class="badge" id="ratingBadge">Рейтинг: 5/5</div>
+          </div>
+
+          <div class="rating">
+            <div class="stars" id="stars">★★★★★</div>
+            <div id="starsCount" class="sub" style="margin-left: 8px">5.0</div>
+          </div>
+
+          <div class="description" id="description">
+            Аскар – жөнөкөй кыргыз айылдык киши, анын жашоодогу негизги
+            принциптери: намыс, салт-санаа жана ысык чай. Анын жакшы коргон кызы
+            Айпери, Америкадан таң калыштуу жаңылык менен кайтып келет: ал
+            турмушка чыгууга даяр! Бирок Аскар үчүн бул кубаныч тез эле тарайт,
+            анткени кызынын жигити кыргыз эмес. Анын үстүнө, ал афроамерикалык!
+            Бул – маданияттардын кагылышы, аталык сүйүү жана чыныгы үй-бүлө,
+            салттар менен эмес, жүрөктүн тандоосу менен түзүлөрү тууралуу окуя
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <div class="comments-card">
+            <div class="comments-header">
+              <h3 style="margin: 0">Комментарии</h3>
+              <div class="sub" id="commentsCount">0</div>
+            </div>
+
+            <div id="commentsList">
+              <!-- comments will appear here -->
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="form-card">
+            <h3 style="margin: 0 0 8px 0">Оставить комментарий</h3>
+            <form id="commentForm">
+              <div class="row">
+                <div class="col">
+                  <label for="name">Имя</label>
+                  <input
+                    id="name"
+                    class="input"
+                    name="name"
+                    required
+                    placeholder="Ваше имя"
+                  />
+                </div>
+              </div>
+
+              <label for="rating">Рейтинг</label>
+              <select id="rating" name="rating" class="input" required>
+                <option value="" disabled selected>Выберите оценку</option>
+                <option value="1">1 — Очень плохо</option>
+                <option value="2">2 — Плохо</option>
+                <option value="3">3 — Нормально</option>
+                <option value="4">4 — Хорошо</option>
+                <option value="5">5 — Отлично</option>
+              </select>
+
+              <label for="comment">Комментарий</label>
+              <textarea
+                id="comment"
+                name="comment"
+                required
+                placeholder="Напишите своё мнение о фильме..."
+              ></textarea>
+
+              <div>
+                <button class="btn" type="submit">Отправить</button>
+
+                <button class="btn" type="button" id="clearBtn">
+                  Очистить
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div style="height: 16px"></div>
+
+          <div class="form-card">
+            <h4 style="margin: 0 0 8px 0">Информация</h4>
+            <p style="margin: 0; color: var(--muted); font-size: 14px">
+              Релиз: <strong id="infoRelease">2024-10-03</strong>
+            </p>
+            <p style="margin: 6px 0 0 0; color: var(--muted); font-size: 14px">
+              Жанры: <strong id="infoGenres">Комедия</strong>
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="js/movie.js"></script>
+  </body>
+</html>

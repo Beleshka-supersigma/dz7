@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Inter";
+}
+
+input {
+  border: 1px solid black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+button {
+  background: inherit;
+  border: 0;
+}
+
+header {
+  background: #fff;
+  color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Левая часть */
+.header__first {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+.search {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.search:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255, 152, 0, 0.4);
+}
+
+/* Центр — навигация */
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav__list li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav__list li a:hover {
+  color: #ff9800;
+}
+
+/* Правая часть — сортировка */
+.sort {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.sort button {
+  background: #f4f4f4;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sort button:hover {
+  background: #ff9800;
+  color: #fff;
+  border-color: #ff9800;
+}
