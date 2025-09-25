@@ -22,12 +22,4 @@ const login = async (e) => {
   }
 };
 
-  fetch(
-    `https://68c7b9ad5d8d9f514732c30b.mockapi.io/api/v1/user?username=${user.username}&password=${user.password}`
-  ).then((response) => {
-    response.json();
-    if (response.ok) window.location.href = "http://127.0.0.1:5500/";
-    else alert("Неправильный пароль или неправильный логин");
-  });
-
 document.querySelector(".login-form").addEventListener("submit", login);
